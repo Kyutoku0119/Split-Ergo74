@@ -1,0 +1,14 @@
+
+if SHIELD_SPLIT_ERGO71JIS_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "split_ergo71jis"
+
+endif
+
+if SHIELD_SPLIT_ERGO71JIS_LEFT || SHIELD_SPLIT_ERGO71JIS_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
